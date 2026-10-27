@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { width: 315px; margin: 0; padding: 16px; background: #111b21; color: #e9edef; font-family: -apple-system, sans-serif; }
+    h2 { margin: 0 0 4px 0; font-size: 16px; color: #00a884; }
+    p.sub { margin: 0 0 12px 0; font-size: 11px; color: #8696a0; }
+    .status-line { font-size: 12px; color: #00a884; margin-bottom: 12px; padding: 8px; background: #202c33; border-radius: 6px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 10px; }
+    .card { background: #202c33; padding: 8px 4px; border-radius: 8px; text-align: center; }
+    .card strong { display: block; font-size: 14px; color: #fff; }
+    .card span { font-size: 9px; color: #8696a0; }
+    button { width: 100%; padding: 9px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; background: linear-gradient(135deg, #00a884, #059669); color: white; margin-bottom: 8px; }
+    button.all-btn { background: linear-gradient(135deg, #0284c7, #2563eb); }
+  </style>
+</head>
+<body>
+  <h2>🟢 WhatsAppSwift v2.0</h2>
+  <p class="sub">Contact Status + WhatsApp Channel Status Downloader</p>
+  <div class="status-line" id="p-status">Status: Ready</div>
+  <div class="stats">
+    <div class="card"><strong id="p-grid">0</strong><span>Sec 1: Photos</span></div>
+    <div class="card"><strong id="p-reels">0</strong><span>Sec 2: Videos</span></div>
+    <div class="card"><strong id="p-dups">0</strong><span>Sec 3: Dups</span></div>
+  </div>
+  <div class="stats">
+    <div class="card"><strong id="p-scanned">0</strong><span>Queued</span></div>
+    <div class="card"><strong id="p-downloaded">0</strong><span>Saved</span></div>
+    <div class="card"><strong id="p-speed">0/s</strong><span>Velocity</span></div>
+  </div>
+  <button id="p-single-trigger">⬇ Download Current Status</button>
+  <button id="p-trigger" class="all-btn">⚡ Download All (Contact / Channel)</button>
+  <script src="popup.js"></script>
+</body>
+</html>

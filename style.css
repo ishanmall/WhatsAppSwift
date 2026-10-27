@@ -1,0 +1,179 @@
+#waswift-status-bar {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647 !important;
+  display: flex;
+  gap: 8px;
+  background: rgba(17, 27, 33, 0.96);
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid #00a884;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wa-status-btn {
+  background: linear-gradient(135deg, #00a884, #059669);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.wa-status-btn-all {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+}
+
+.wa-status-btn-vault {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+}
+
+.wa-status-btn:hover {
+  opacity: 0.94;
+}
+
+.wa-floating-hover-btn {
+  position: fixed;
+  z-index: 2147483646 !important;
+  background: rgba(0, 168, 132, 0.95);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wa-floating-hover-btn:hover {
+  background: #059669;
+}
+
+#whatsappswift-hud {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 375px;
+  background: #111b21;
+  color: #e9edef;
+  border: 1px solid #00a884;
+  border-radius: 14px;
+  padding: 16px;
+  z-index: 2147483647 !important;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wa-hud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.wa-hud-title {
+  font-size: 14px;
+  color: #e9edef;
+}
+
+#wa-hud-close {
+  background: transparent;
+  border: none;
+  color: #8696a0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.wa-hud-status {
+  font-size: 12px;
+  color: #00a884;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.wa-hud-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.wa-stat-box {
+  background: #202c33;
+  border: 1px solid #2a3942;
+  border-radius: 10px;
+  padding: 10px 6px;
+  text-align: center;
+}
+
+.wa-room-photos { border-bottom: 2px solid #00a884; }
+.wa-room-videos { border-bottom: 2px solid #38bdf8; }
+.wa-room-dups { border-bottom: 2px solid #f59e0b; }
+
+.wa-stat-val {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.wa-stat-lbl {
+  font-size: 10px;
+  color: #8696a0;
+}
+
+.wa-disk-line {
+  text-align: center;
+  font-size: 11px;
+  color: #8696a0;
+  margin-bottom: 12px;
+}
+
+.wa-hud-btn-row {
+  display: flex;
+  gap: 6px;
+}
+
+.wa-start-btn {
+  flex: 1.2;
+  background: #00a884;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wa-all-btn {
+  flex: 1.5;
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wa-stop-btn {
+  flex: 0.7;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
